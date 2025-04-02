@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ever Print</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="headSection" id="hero">
+        <div class="headers">
+          <ul style="display: flex; gap: 50px;">
+
+            <li><a style="color: white; text-decoration: none;" href="#hero">Home</a></li>
+            <li><a style="color: white;text-decoration: none;" href="#about">About</a></li>
+            <li><a style="color: white;text-decoration: none;" href="#contact">Contact</a></li>
+            <li><a style="color: white;text-decoration: none;" href="#Services">Services</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="herobackground">
+          <img
+            class="herobackgroundimg"
+            src="assets/herobackgroundimage.avif"
+            alt=""
+          />
+        </div>
+
+        <div class="fullLogoContainer">
+          <div class="logoContainer">
+            <img class="shapes blueRectangle" src="assets/Rectangle 11.svg" alt="" />
+            <img class="shapes yellowRectangle" src="assets/Rectangle 12.svg" alt="" />
+            <img class="shapes greenCircle" src="assets/Ellipse 1.svg" alt="" />
+            <img class="shapes pinkRectangle" src="assets/Rectangle 13.svg" alt="" />
+          </div>
+
+          <div class="everprint">
+            <img class="logoimage" src="assets/logo1.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="definintion">
+          <div class="wordswidth">
+            <h1 class="word">
+              We
+              <span class="word">Create</span>
+              <span class="word">Experiences</span> <br>
+              <div style="display: flex; gap: 15px; align-items: center;">
+
+                <span><video style="width: 200px; border-radius: 50px; margin-top: 2%; " src="assets/2541977-hd_1920_1080_24fps.mp4" loop autoplay muted></video></span>
+                <span class="word">that</span>
+                <span class="word">sell!</span>
+              </div>
+            </h1>
+          </div>
+
+          <p class="definitionpara">
+            We create innovative and impactful ads that capture attention,
+            engage audiences, and drive meaningful results.
+          </p>
+        </div>
+
+        <div class="social-links" style="background-color:white; display: flex;flex-direction: column;width: 5%; gap: 20px; font-size: 30px;padding:20px ;border-radius: 10px 0 0 10px; position: absolute;right: 0; top: 30%;">
+          <a target="_blank" href="https://api.whatsapp.com/send/?phone=97450757272&text&type=phone_number&app_absent=0"><i class="fa-brands fa-square-whatsapp fa-beat" style="color: #0ee132;"></i></a>
+          <a href=""><i class="fa-brands fa-square-facebook"  style="color: #0e58e1;"></i></a>
+          <a href="mailto:info@everprintqatar.com"><i class="fa-solid fa-envelope " style="color: rgb(156, 2, 2);"></i></a>
+          <a target="_blank" href="https://www.instagram.com/everprintadvertising/"><i class="fa-brands fa-square-instagram " style="color: rgb(183, 0, 255);"></i></a>
+        </div>
+      </div>
+
+      <!-- who we are starts -->
+
+      <div  style="background-color: black">
+        <div class="aboutus">
+          <div class="line-text-container">
+            <hr />
+            <p>Who we are</p>
+            <hr />
+          </div>
+          <h1 class="aboustusHeading">We Turn Brands into Icons</h1>
+          <hr
+            style="
+              width: 70%;
+              height: 1px;
+              border: none;
+              margin: auto;
+              background: linear-gradient(to right, #333, #777, #333);
+              border-radius: 3px;
+              margin-bottom: 5%;
+            "
+          />
+
+          <div class="text-container" id="paragraph">
+            We work with a variety of clients in Qatar by building and
+            maintaining brand reputation to facilitate maximum return on your
+            marketing investment.
+          </div>
+        </div>
+      </div>
+
+      <!-- who we are ends -->
+
+
+      <!-- Our services starts -->
+      <div id="Services" style="padding-top: 5%; background-color: black">
+        <h1
+          style="
+            color: aliceblue;
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            letter-spacing: 10px;
+            margin-bottom: 2%;
+          "
+        >
+          OUR SERVICES
+        </h1>
+        <hr
+          style="
+            width: 70%;
+            height: 1px;
+            border: none;
+            margin: auto;
+            background: linear-gradient(to right, #333, #777, #333);
+            border-radius: 3px;
+            margin-bottom: 5%;
+          "
+        />
+        <div
+          style="
+            width: 79%;
+            margin: auto;
+            border-radius: 20px;
+            border: 1px solid grey;
+            padding: 10px;
+            background-color: black;
+          "
+        >
+          <div class="grid-container">
+            <!-- signages -->
+            <div
+              class="grid-item"
+              data-aos="zoom-out-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/signages.avif"
+                alt=""
+              />
+
+              <div class="grid-item-name">
+                SIGNAGES
+              </div>
+
+              <div class="grid-item-def">
+
+                
+                <p>Signage</p>
+                <p>Frontlit 3D Letter Sign</p>
+                <p>Backlit 3D Letter Sign</p>
+                <p>Parking Signs</p>
+                <p>Safety Signs</p>
+                <p>Pylons</p>
+                <p>Way Finding</p>
+                <p>Digital Signages</p>
+                <p>Traffic Signages</p>
+                <p>Channelume Letter Sign</p>
+                <p>SS & Brass 3D Letter Sign</p>
+                <p>Letter Sign</p>
+                  
+              </div>
+              
+              <div>
+                
+              </div>
+            </div>
+
+            <!-- Photography -->
+            <div
+              class="grid-item"
+              data-aos="zoom-out-left"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/photography.avif"
+                alt=""
+              />
+              <div class="grid-item-name">PHOTOGRAPHY</div>
+
+              <div class="grid-item-def-nogrid">
+
+                
+                <p>Industrial</p>
+                <p>Fashion</p>
+                <p>Corporate</p>
+                <p>Events</p>
+                <p>Food</p>
+                <p>Panoramic</p>
+                <p>Motiontion</p>
+                <p>Sports</p>
+                <p>Head Shots</p>
+                  
+              </div>
+
+              
+              
+            </div>
+
+            <!-- Exibition and Interior -->
+
+            <div
+              class="grid-item "
+              data-aos="zoom-out-left"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/exterior.avif"
+                alt=""
+              />
+              <div class="grid-item-name">
+                EXHIBITION <br />
+                & <br />
+                INTERIOR
+              </div>
+              <div class="grid-item-def-nogrid">
+
+                 
+                <p>3D Design Concepts</p>
+                <p>Stands</p>
+                <p>Display Stand</p>
+                <p>Interior Design</p>
+                <p>Kiosk</p>
+                <p>Architecture Fitouts</p>
+                <p>Gondals</p>
+                <p>Turn Key Interior Works</p>
+                
+                  
+              </div>
+              
+            </div>
+            <!-- Branding -->
+            <div class="grid-item">
+              <img
+                src="assets/Branding.avif"
+                alt=""
+              />
+              <div class="grid-item-name">BRANDING</div>
+              <div class="grid-item-def-nogrid" >
+
+                 
+                <p>Logo Designing</p>
+                <p>Marketing Collaterals</p>
+                <p>Stationery Designing</p>
+                <p>Invite Design</p>
+                <p>Identity Designing</p>
+                <p>Packaging</p>
+                <p>Brand Building Elements</p>
+                <p>Brochure</p>
+                <p>Conceptual  Reports</p>
+                <p>Advertising Campain</p>
+                
+                  
+              </div>
+            </div>
+
+            <!-- corporate Giveaways -->
+
+            <div
+              class="grid-item"
+              data-aos="zoom-out-right"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/corporate.avif"
+                alt=""
+              />
+              <div class="grid-item-name">
+                CORPORATE <br />
+                GIVEAWAYS
+              </div>
+
+              <div class="grid-item-def-nogrid" >
+
+                 
+                <p>Trade Show Giveaways</p>
+                <p>Office & Desk Accessories</p>
+                <p>Writings & Accessories</p>
+                <p>Kid & Games</p>
+                <p>Sports & Recreation</p>
+                <p>Bags & Travel</p>
+                  
+              </div>
+            </div>
+
+            
+            <!-- Promotional Clothing -->
+            <div
+              class="grid-item"
+              data-aos="zoom-out-right"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/clothing.avif"
+                alt=""
+              />
+              <div class="grid-item-name">PROMOTIONAL <br />
+                CLOTHING</div>
+                <div class="grid-item-def-nogrid" >
+
+                 
+                  <p>Screen Printing</p>
+                  <p>Digital Printing</p>
+                  <p>Heat Transfer</p>
+                  <p>Digital Transfer</p>
+                  <p>Embroidery</p>
+                    
+                </div>
+            </div>
+
+            <!-- Printing -->
+            <div
+              class="grid-item"
+              data-aos="zoom-out-left"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              >
+              <img
+                src="assets/printing.avif"
+                alt=""
+              />
+              <div class="grid-item-name">PRINTING</div>
+              <div class="grid-item-def" >
+
+                 
+                <p>Posters</p>
+                <p>Banners</p>
+                <p>Roll-Up Banners</p>
+                <p>Wallpapers</p>
+                <p>Wall Stickers</p>
+                <p>Canvases</p>
+                <p>Pop-Up Displays</p>
+                <p>Event and Transit Signage</p>
+                <p>Point of Purchase Displays</p>
+                <p>Trade Show Displays</p>
+                <p>Conference and Event Displays</p>
+                <p>Vehicle Graphics</p>
+                <p>Floor Graphics</p>
+                <p>Presentations</p>
+                <p>Stage Graphics</p>
+                <p>NCR Book Printing</p>
+                
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Our services ends -->
+
+      <!-- description starts -->
+
+      <div id="about"
+        style="
+          text-align: justify;
+          padding-top: 5%;
+          background-color: black;
+          padding-bottom: 20%;
+          padding-top: 20%;
+        "
+      >
+        <div
+          style="
+            margin: auto;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 80%;
+          "
+        >
+          <h1
+            style="
+              font-size: 70px;
+              color: #d1cfcf;
+              text-align: center;
+              letter-spacing: 10px;
+            "
+          >
+            Transform Your Brand with EVERPRINT ADVERTISING
+          </h1>
+          <hr
+            style="
+              width: 90%;
+              height: 1px;
+              border: none;
+              margin: auto;
+              background: linear-gradient(to right, #333, #777, #333);
+              border-radius: 3px;
+            "
+          />
+          <div style="display: flex; flex-direction: column; gap: 20px">
+            <h1 style="font-size: 40px">
+              Maximize Your Advertising Potential with EVERPRINT ADVERTISING
+            </h1>
+            <p style="line-height: 30px; font-size: 20px; font-weight: 200">
+              At EVERPRINT ADVERTISING, we understand the importance of
+              effective advertising in today's competitive market. That's why we
+              offer a comprehensive range of services designed to help
+              businesses like yours maximize their advertising potential. Our
+              team of experts is dedicated to working closely with you to
+              understand your unique needs and develop a customized plan that
+              meets your goals and budget.
+            </p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 20px">
+            <h1 style="font-size: 40px" ;>Why Choose EVERPRINT ADVERTISING?</h1>
+            <p style="line-height: 30px; font-size: 20px; font-weight: 200">
+              At EVERPRINT ADVERTISING, we believe that every business deserves
+              the chance to succeed. That's why we offer affordable advertising
+              solutions that deliver results. With our proven track record of
+              success and commitment to customer satisfaction, you can trust us
+              to help you achieve your advertising objectives. Contact us today
+              to learn more about our services and how we can help your business
+              grow.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- description ends -->
+      <!-- marquee starts  -->
+      <div style="background-color: black">
+        <div
+          style="
+            /* background-color: black; */
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+          "
+        >
+          <h1 style="letter-spacing: 10px; font-size: 60px; margin-bottom: 2%">
+            A Gallery of Creativity
+          </h1>
+          <hr
+            style="
+              width: 70%;
+              height: 1px;
+              border: none;
+              margin: auto;
+              background: linear-gradient(to right, #333, #777, #333);
+              border-radius: 3px;
+              margin-bottom: 5%;
+            "
+          />
+
+          <div
+            style="
+              display: flex;
+              gap: 30px;
+              flex-direction: column;
+              padding-top: 30px;
+              padding-bottom: 30px;
+            "
+          >
+            <marquee
+              style="display: flex; gap: 20px; overflow-x: scroll"
+              class="marque"
+              behavior=""
+              direction="left"
+            >
+              <img src="assets/IMG_1173.JPG" alt="" />
+              <img src="assets/IMG_3612.JPG" alt="" />
+              <img src="assets/IMG_3584.JPG" alt="" />
+              <img src="assets/IMG_3590.JPG" alt="" />
+              <img src="assets/IMG_3609.JPG" alt="" />
+            </marquee>
+
+            <marquee
+              style="display: flex; overflow-x: scroll"
+              class="marque"
+              behavior=""
+              direction="right"
+            >
+              <img src="assets/IMG_3643.JPG" alt="" />
+              <img src="assets/IMG_3631.JPG" alt="" />
+              <img src="assets/IMG_3639.JPG" alt="" />
+              <img src="assets/IMG_5281.JPG" alt="" />
+              <img src="assets/IMG_7289.JPG" alt="" />
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <!-- marquee ends -->
+
+      <!-- footer -->
+      <div id="contact"
+        style="
+          /* height: 100vh; */
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          padding-top: 20%; /* Padding at the top */
+          padding-bottom: 20px;
+          background-color: black;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 40%;
+            /* height: 100vh; */
+            padding: 20px;
+            color: aliceblue;
+          "
+        >
+          <h1 style="font-size: 60px">Contact Us</h1>
+          <h1>Let's Get Started</h1>
+          <p style="margin-bottom: 10%">
+            Take the first step, and contact us to discuss your marketing and
+            business goals. Send us a message, and we will get back to you soon.
+          </p>
+
+          <div
+            style="
+              color: aliceblue;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              width: 50%;
+            "
+          >
+            <h1>Working Hours</h1>
+            <p><span style="margin-right: 5%">Mon</span>08:00 am – 06:00 pm</p>
+            <p><span style="margin-right: 7%">Tue</span>08:00 am – 06:00 pm</p>
+            <p><span style="margin-right: 4%">Wed</span>08:00 am – 06:00 pm</p>
+            <p><span style="margin-right: 6%">Thu</span>08:00 am – 06:00 pm</p>
+            <p><span style="margin-right: 9%">Fri</span>Closed</p>
+            <p><span style="margin-right: 6%">Sat</span>08:00 am – 06:00 pm</p>
+            <p><span style="margin-right: 5%">Sun</span>08:00 am – 06:00 pm</p>
+          </div>
+        </div>
+        <div
+          style="
+            width: 50%;
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 5%;
+            color: aliceblue;
+            justify-content: center;
+          "
+        >
+          <a
+           target="_blank" href="https://api.whatsapp.com/send/?phone=97450757272&text&type=phone_number&app_absent=0"
+            style="
+              background-color: #0ee132;
+              text-decoration: none;
+              padding: 30px;
+              text-align: end;
+              color: black;
+              font-weight: 800;
+              font-size: 18px;
+            "
+          >
+          Message us on Whatsapp</a
+          >
+          <h3>EVERPRINT ADVERTISING</h3>
+          <p style="width: 70%;">
+            Muntazah Trading Center, Tower 1, Floor 5, Office No 2,Street No
+            830, Zone 24, Doha - Qatar
+          </p>
+
+          <p style="color: aliceblue">
+            +974 701 60005 &nbsp +974 309 17 409 &nbsp info@everprintqatar.com
+          </p>
+
+          <a class="directions" style="" target="_blank" href="https://www.google.com/maps/dir//Muntazah+Trading+Center,+Tower+1,+Floor+5,+Office+No+2,Street+No+830,+Zone+24,+Doha+-+Qatar/@25.2919932,51.4411007,12z?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D">Get Directions</a>
+
+          <img style="width: 80%; margin-top: 14%" src="assets/logo.svg" alt="" />
+        </div>
+      </div>
+
+      <div style="color: aliceblue; padding: 20px; text-align: center;border-top: 1px solid gray;">
+        Copyright © 2024 EVERPRINT ADVERTISING - All Rights Reserved.
+      </div>
+    </section>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="script.js"></script>
+</html>

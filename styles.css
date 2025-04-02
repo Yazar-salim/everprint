@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar */
+}
+
+.headSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.headers {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  top: 5%;
+  margin-left: 25%;
+  width: 50%;
+  background: rgba(112, 107, 107, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  z-index: 100;
+}
+
+.headers li {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.herobackground {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+}
+
+.herobackgroundimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* opacity: 0.6; */
+}
+
+.fullLogoContainer {
+  width: 70%;
+  height: 70%;
+  padding-left: 40%;
+  padding-top: 20%;
+  display: flex;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 5%;
+  position: relative;
+}
+
+.logoContainer .shapes {
+  width: 30%;
+  position: absolute;
+  /* opacity: 0; */
+}
+
+.everprint {
+  opacity: 0;
+}
+
+.logoimage {
+  width: 80%;
+  margin-top: -5%;
+  margin-left: -10%;
+  /* opacity:1; */
+}
+
+.definintion {
+  position: absolute;
+  top: 47%;
+  left: 11%;
+}
+
+.wordswidth {
+  width: 100%;
+}
+
+.word {
+  color: white;
+  font-size: 5rem;
+}
+
+.definitionpara {
+  color: white;
+  margin-top: 1%;
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+.text-container {
+  font-size: 4rem;
+  text-align: justify;
+  width: 100%;
+  overflow: hidden;
+  /* background-color: black; */
+  letter-spacing: 1px;
+}
+
+.word1 {
+  display: inline-block;
+  color: rgb(39, 39, 39); /* Starts as green */
+  transition: color 0.3s ease;
+  text-align: justify;
+}
+
+.line-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adjusts space between lines and text */
+  width: 30%; /* Ensures it spans the full width */
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.line-text-container hr {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+.line-text-container p {
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin: 0;
+}
+
+.aboutus {
+  background-color: black;
+  color: white;
+  width: 80%;
+  padding-top: 10%;
+  margin-left: 10%;
+  padding-bottom: 10%;
+  text-align: start;
+}
+
+.aboustusHeading {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+  /* background: rgb(203,50,135); */
+  background: linear-gradient(
+    90deg,
+    rgba(203, 50, 135, 1) 31%,
+    rgba(16, 169, 231, 1) 53%,
+    rgba(248, 116, 39, 1) 64%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+  grid-template-rows: auto; /* Adjusts based on content */
+  gap: 10px;
+  grid-template-areas:
+    "box1 box1 box2"
+    "box3 box4 box6"
+    "box5 box7 box7";
+  padding: 20px;
+  position: relative;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden; /* Prevents overflow */
+  background: rgba(112, 107, 107, 0.2);
+  backdrop-filter: blur(10px);
+  height: 250px; /* Default height for grid items */
+  position: relative;
+  cursor: pointer;
+  
+}
+
+
+
+.grid-item-name {
+  position: absolute;
+  top: 5;
+  left: 3;
+  font-size: 40px;
+  color: aliceblue;
+  font-weight: 700;
+  transition: transform 0.4s ease-in-out;
+}
+
+.grid-item-def {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  background-color: rgb(150, 149, 145);
+  opacity: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+.grid-item-def p {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: justify;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.grid-item:hover .grid-item-def {
+  top: 0;
+  opacity: 0.8;
+  transform: rotateY(180deg);
+}
+
+.grid-item-def-nogrid {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-out;
+  /* background-color: orangered; */
+  background-color: orangered;
+  opacity: 0;
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+}
+.grid-item-def-nogrid p {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: justify;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.grid-item:hover .grid-item-def-nogrid {
+  top: 0;
+  opacity: 0.8;
+  transform: rotateY(180deg);
+  animation: changeColor 0.6s forwards;
+}
+
+.grid-item:hover .grid-item-name {
+  transform: translateY(-50px);
+}
+
+/* ✅ Fix Image Sizing */
+.grid-item img {
+  width: 100%; /* Fit image to container width */
+  height: 100%; /* Fit image to container height */
+  object-fit: cover; /* Prevents distortion */
+  border-radius: 5px;
+}
+
+/* ✅ Assign Specific Areas */
+.grid-item:nth-child(1) {
+  grid-area: box1;
+  height: 400px;
+}
+.grid-item:nth-child(2) {
+  grid-area: box2;
+  height: 400px;
+}
+.grid-item:nth-child(3) {
+  grid-area: box3;
+  height: 500px;
+}
+.grid-item:nth-child(4) {
+  grid-area: box4;
+  height: 500px;
+}
+.grid-item:nth-child(5) {
+  grid-area: box5;
+  height: 400px;
+}
+.grid-item:nth-child(6) {
+  grid-area: box6;
+  height: 500px;
+}
+.grid-item:nth-child(7) {
+  grid-area: box7;
+  height: 400px;
+}
+
+.marque img {
+  width: 25%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.marque::-webkit-scrollbar {
+  display: none; /* Hides scrollbar */
+}
+
+.directions {
+  background-color: #0ee132;
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  font-weight: 700;
+  transition: transform 0.6s ease-out;
+  
+}
+.directions:hover{
+  background-color: aliceblue;
+  padding: 22px;
+  transform: translate(10px);
+}
