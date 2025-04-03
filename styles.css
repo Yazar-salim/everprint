@@ -76,7 +76,6 @@ body::-webkit-scrollbar {
 .logoContainer .shapes {
   width: 30%;
   position: absolute;
-  /* opacity: 0; */
 }
 
 .everprint {
@@ -152,6 +151,10 @@ body::-webkit-scrollbar {
   margin: 0;
 }
 
+.whoweare {
+  background-color: black;
+}
+
 .aboutus {
   background-color: black;
   color: white;
@@ -203,10 +206,7 @@ body::-webkit-scrollbar {
   height: 250px; /* Default height for grid items */
   position: relative;
   cursor: pointer;
-  
 }
-
-
 
 .grid-item-name {
   position: absolute;
@@ -319,6 +319,13 @@ body::-webkit-scrollbar {
   height: 400px;
 }
 
+.description {
+  text-align: justify;
+  padding-top: 5%;
+  background-color: black;
+  padding-bottom: 20%;
+  padding-top: 20%;
+}
 .marque img {
   width: 25%;
   height: 200px;
@@ -336,10 +343,264 @@ body::-webkit-scrollbar {
   color: black;
   font-weight: 700;
   transition: transform 0.6s ease-out;
-  
 }
-.directions:hover{
+.directions:hover {
   background-color: aliceblue;
   padding: 22px;
   transform: translate(10px);
+}
+
+.social-links {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  gap: 20px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  right: 0;
+  top: 30%;
+}
+
+.services {
+  padding-top: 5%;
+  background-color: black;
+}
+
+.servicehead {
+  color: aliceblue;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+  margin-bottom: 2%;
+}
+
+.description-head {
+  font-size: 70px;
+  color: #d1cfcf;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.descriptiondef {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.descriptiondef h1 {
+  font-size: 40px;
+}
+
+.descriptiondef p {
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.descriptiondef1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.descriptiondef1 h1 {
+  font-size: 40px;
+}
+.descriptiondef1 p {
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 200;
+}
+.marquee {
+  background-color: black;
+}
+
+.marque h1 {
+  letter-spacing: 10px;
+  font-size: 60px;
+  margin-bottom: 2%;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 20%; /* Padding at the top */
+  padding-bottom: 20px;
+  background-color: black;
+}
+
+.contactusheading {
+  font-size: 60px;
+}
+
+.contactleft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  padding: 20px;
+  color: aliceblue;
+}
+
+.contactright {
+  width: 50%;
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5%;
+  color: aliceblue;
+  justify-content: center;
+}
+.working-hours{
+  width: 100%;
+}
+@media (width<=425px) {
+  body {
+    overflow-x: hidden;
+  }
+  .headSection {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .headers {
+    display: none;
+  }
+
+  .fullLogoContainer {
+    width: 100%;
+    height: 70%;
+    padding-left: 40%;
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 11%;
+    gap: 5%;
+    margin-right: 8%;
+    position: relative;
+  }
+
+  .logoContainer .shapes {
+    width: 50%;
+    position: absolute;
+  }
+
+  .everprint {
+    width: 300%;
+  }
+
+  .herobackground {
+    width: 425px;
+  }
+
+  .herobackgroundimg {
+    width: 425px;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .wordswidth {
+    width: 100px;
+  }
+  .word {
+    font-size: 30px;
+  }
+
+  .definitionpara {
+    width: 300px;
+    font-size: 18px;
+  }
+
+  .whoweare {
+    width: 100%;
+    background-color: black;
+  }
+
+  .description {
+    /* display: none; */
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .services {
+    width: 425px;
+  }
+
+  .servicehead {
+    font-size: 40px;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .description-head {
+    font-size: 40px;
+    width: 90%;
+  }
+
+  .descriptiondef h1 {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .descriptiondef p {
+    font-size: 14px;
+  }
+
+  .descriptiondef1 h1 {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .descriptiondef1 p {
+    font-size: 14px;
+  }
+
+  .marquee h1 {
+    font-size: 30px;
+  }
+
+  .marque img {
+    height: 150px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactleft {
+    width: 100%;
+  }
+  .contactusheading {
+    font-size: 25px;
+    /* width: 80%; */
+  }
+
+  .contactright{
+    width:100%;
+    display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+  }
+  .working-hours{
+    width: 120%;
+  }
 }

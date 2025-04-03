@@ -6,38 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(MotionPathPlugin,ScrollTrigger);
 
   // Create GSAP timeline
+
   const tl = gsap.timeline();
   
- 
+  let mm = gsap.matchMedia(); 
 
-  // Step 1: Set initial properties (All shapes start from center, small scale)
-  gsap.set(".shapes", {
-    x: 0,
-    y: 0,
-    scale: 1, // Shapes start at full size
-    opacity: 1,
-  });
+  
 
-  tl.from(".blueRectangle", {
-    y: -100,
-    ease: "bounce.out",
-    opacity: 1,
-  });
-  tl.from(".yellowRectangle", {
-    y: -100,
-    opacity: 1,
-    ease: "bounce.out",
-  });
-  tl.from(".greenCircle", {
-    y: -100,
-    opacity: 1,
-    ease: "bounce.out",
-  });
-  tl.from(".pinkRectangle", {
-    y: -100,
-    ease: "bounce.out",
-    opacity: 1,
-  });
+ tl.from(".blueRectangle, .yellowRectangle, .greenCircle, .pinkRectangle", {
+        y: -100,
+        ease: "bounce.out",
+        opacity: 1,
+        stagger: 0.2,
+      });
 
   // Step 2: Rotate the shapes in a circular motion (one full cycle)
   tl.to(".shapes", {
@@ -126,6 +107,78 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
 
+  mm.add("(max-width: 425px)", () => {
+    tl.clear()
+    // Create a new timeline specifically for this screen size
+    let tlMobile = gsap.timeline();
+  
+    tlMobile.from(".blueRectangle, .yellowRectangle, .greenCircle, .pinkRectangle", {
+      y: -50, // Moves DOWN initially
+      opacity: 1,
+      stagger: 0.5,
+    });
+
+    
+
+     tlMobile.to(
+    [".blueRectangle", ".yellowRectangle", ".pinkRectangle", ".greenCircle"],
+    {
+      duration: 1, // Smooth movement duration
+      ease: "bounce.out",
+      stagger: 0.1,
+      x: (i) => [-15, 20, -15, 20][i], // X positions
+      y: (i) => [-15, -15, 20, 20][i], // Y positions
+    }
+  );
+
+    tlMobile.to(".fullLogoContainer", { y: -150, x: -40, duration: 1, scale: 1 });
+    tlMobile.to(".herobackground", {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+    });
+
+        // Step 4: Animate the right logo (appears after shapes settle)
+  tlMobile.to(
+    ".everprint",
+    {
+      // y: -12,
+      x: 10,
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      ease: "bounce.out",
+    },
+    "-=0.5"
+  ); // Slight overlap for smooth transition
+
+
+
+    
+    tlMobile.to(".word", {
+      opacity: 1,
+      x: -15,
+      y: -80,
+      duration: 0.5,
+      stagger: 0.1, // Animates each word with a slight delay
+    });
+
+    tlMobile.to(".definitionpara", {
+      opacity: 1,
+      y: -80,
+      x:-25
+    });
+
+
+  
+
+    return () => {
+      tlMobile.kill(); // Ensures this timeline is removed when screen size changes
+    };
+  });
+
+
+
  // Get paragraph text and split it into words
  const paragraph = document.getElementById("paragraph");
  const words = paragraph.innerText.split(" "); // Split into words
@@ -148,9 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
      }
  );
 
-
-
-
+ 
 });
 
 
