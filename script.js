@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
 
-  mm.add("(max-width: 425px)", () => {
+  mm.add("(max-width: 798px)", () => {
     tl.clear()
     // Create a new timeline specifically for this screen size
     let tlMobile = gsap.timeline();

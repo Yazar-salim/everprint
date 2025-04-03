@@ -20,6 +20,7 @@ body::-webkit-scrollbar {
   position: relative;
   width: 100%;
   height: 100vh;
+  /* background-color: black ; */
 }
 
 .headers {
@@ -415,9 +416,9 @@ body::-webkit-scrollbar {
   font-size: 20px;
   font-weight: 200;
 }
-.marquee {
+/* .marquee {
   background-color: black;
-}
+} */
 
 .marque h1 {
   letter-spacing: 10px;
@@ -425,6 +426,25 @@ body::-webkit-scrollbar {
   margin-bottom: 2%;
 }
 
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: black;
+
+}
+
+.marquee img {
+  height: 150px;
+  max-width: 100%;
+  object-fit: cover;
+}
 .contact {
   display: flex;
   justify-content: center;
@@ -461,13 +481,14 @@ body::-webkit-scrollbar {
 .working-hours{
   width: 100%;
 }
-@media (300px<=width<=495px) {
+@media (min-width: 300px) and (max-width: 798px){
   body {
-    overflow-x: hidden;
+    background-color: black ;
   }
   .headSection {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    
   }
 
   .headers {
@@ -475,7 +496,7 @@ body::-webkit-scrollbar {
   }
 
   .fullLogoContainer {
-    width: 100%;
+    width: 90%;
     height: 70%;
     padding-left: 40%;
     padding-top: 20%;
@@ -508,8 +529,8 @@ body::-webkit-scrollbar {
   }
 
   .herobackgroundimg {
-    width: 99%;
-  max-width: 99%;
+
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
   }
@@ -535,9 +556,7 @@ body::-webkit-scrollbar {
     background-color: black;
   }
 
-  .description {
-    /* display: none; */
-  }
+
 
   .social-links {
     display: none;
@@ -583,8 +602,8 @@ body::-webkit-scrollbar {
     font-size: 30px;
   }
 
-  .marque img {
-    height: 150px;
+  .marquee img {
+    height: 100px;
   }
   .contact {
     display: flex;
