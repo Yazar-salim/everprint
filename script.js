@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: 1,
     y: 0,
     duration: 1.5,
-    ease: "bounce.out",
+    // ease: "bounce.out",
   });
 
   tl.from(".word", {
@@ -223,3 +223,20 @@ document.querySelectorAll(".grid-item").forEach((container) => {
     });
 });
 
+
+
+
+  const btn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
